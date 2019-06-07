@@ -1,4 +1,8 @@
-
+/*!
+ * Start Bootstrap - Creative v1.1.0 (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
 html,
 body {
   height: 100%;
@@ -12,7 +16,7 @@ hr {
   border-width: 3px;
   max-width: 50px;
 }
-hr.bold {
+hr.light {
   border-color: white;
 }
 a {
@@ -46,7 +50,7 @@ p {
   color: white;
 }
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255,255, 0.7);
 }
 section {
   padding: 100px 0;
@@ -111,18 +115,18 @@ aside {
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: white;
+    color: black
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
-    color: white;
+    color: black
   }
   .navbar-default.affix {
-    background-color: white;
+    background-color: black
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -151,14 +155,14 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('https://cdn.glitch.com/ffd01877-d5ff-457b-acf1-f5a12a35c453%2Fw.png');
+  background-image: url('https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-05-30%20at%202.46.55%20PM.jpeg?v=1559840963193');
   text-align: center;
-  color: white;
+  color: grey
 }
-header .header-content {                <p>
+header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 30px 100px;
+  padding: 100px 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
@@ -173,7 +177,7 @@ header .header-content .header-content-inner hr {
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: rgba(255, 255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
 }

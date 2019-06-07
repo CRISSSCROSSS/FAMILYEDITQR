@@ -1,416 +1,289 @@
-/*!
- * Start Bootstrap - Creative v1.1.0 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-}
-hr {
-  border-color: #F05F40;
-  border-width: 3px;
-  max-width: 50px;
-}
-hr.light {
-  border-color: white;
-}
-a {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-  color: #F05F40;
-}
-a:hover,
-a:focus {
-  color: #eb3812;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-.bg-primary {
-  background-color: #F05F40;
-}
-.bg-dark {
-  background-color: #222222;
-  color: white;
-}
-.text-faded {
-  color: rgba(255, 255,255, 0.7);
-}
-section {
-  padding: 100px 0;
-}
-aside {
-  padding: 50px 0;
-}
-.no-padding {
-  padding: 0;
-}
-.navbar-default {
-  background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
-}
-.navbar-default .navbar-header .navbar-toggle {
-  font-weight: 700;
-  font-size: 12px;
-  color: #222222;
-  text-transform: uppercase;
-}
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 13px;
-  color: #222222;
-}
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
-}
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
-  background-color: transparent;
-}
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
-  background-color: transparent;
-}
-@media (min-width: 768px) {
-  .navbar-default {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-  .navbar-default .navbar-header .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .navbar-default .navbar-header .navbar-brand:hover,
-  .navbar-default .navbar-header .navbar-brand:focus {
-    color: black
-  }
-  .navbar-default .nav > li > a,
-  .navbar-default .nav > li > a:focus {
-    color: rgba(0, 0, 0, 0.7);
-  }
-  .navbar-default .nav > li > a:hover,
-  .navbar-default .nav > li > a:focus:hover {
-    color: black
-  }
-  .navbar-default.affix {
-    background-color: black
-    border-color: rgba(34, 34, 34, 0.05);
-  }
-  .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
-    font-size: 14px;
-  }
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
-  }
-  .navbar-default.affix .nav > li > a,
-  .navbar-default.affix .nav > li > a:focus {
-    color: #222222;
-  }
-  .navbar-default.affix .nav > li > a:hover,
-  .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
-  }
-}
-header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-05-30%20at%202.46.55%20PM.jpeg?v=1559840963193');
-  text-align: center;
-  color: grey
-}
-header .header-content {
-  position: relative;
-  text-align: center;
-  padding: 100px 15px 100px;
-  width: 100%;
-}
-header .header-content .header-content-inner h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 30px;
-}
-header .header-content .header-content-inner hr {
-  margin: 30px auto;
-}
-header .header-content .header-content-inner p {
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 16px;
-  margin-bottom: 50px;
-}
-@media (min-width: 768px) {
-  header {
-    min-height: 100%;
-  }
-  header .header-content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
-  }
-  header .header-content .header-content-inner {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  header .header-content .header-content-inner h1 {
-    font-size: 50px;
-  }
-  header .header-content .header-content-inner p {
-    font-size: 18px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.section-heading {
-  margin-top: 0;
-}
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0;
-}
-@media (min-width: 992px) {
-  .service-box {
-    margin: 20px auto 0;
-  }
-}
-.service-box p {
-  margin-bottom: 0;
-}
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
-}
-.portfolio-box .portfolio-box-caption {
-  color: white;
-  opacity: 0;
-  display: block;
-  background: rgba(240, 95, 64, 0.9);
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  padding: 0 15px;
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 18px;
-}
-.portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
-}
-.portfolio-box:focus {
-  outline: none;
-}
-@media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
-  }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
-  }
-}
-.call-to-action h2 {
-  margin: 0 auto 20px;
-}
-.text-primary {
-  color: #F05F40;
-}
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
-}
-.btn-default {
-  color: #222222;
-  background-color: white;
-  border-color: white;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  color: #222222;
-  background-color: #f2f2f2;
-  border-color: #ededed;
-}
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  background-image: none;
-}
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
-  background-color: white;
-  border-color: white;
-}
-.btn-default .badge {
-  color: white;
-  background-color: #222222;
-}
-.btn-primary {
-  color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
-}
-.btn-primary .badge {
-  color: #F05F40;
-  background-color: white;
-}
-.btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.btn-xl {
-  padding: 15px 30px;
-}
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #222222;
-}
-::selection {
-  color: white;
-  text-shadow: none;
-  background: #222222;
-}
-img::selection {
-  color: white;
-  background: transparent;
-}
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
-body {
-  webkit-tap-highlight-color: #222222;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Familia Valdivia</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="font-awesome.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation "https://cdn.glitch.com/ffd01877-d5ff-457b-acf1-f5a12a35c453%2Fheader.jpeg"</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CrisssCrosss</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Familia Valdivia </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Dedicatoria</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Fotos juntos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Familia Valdivia</h1>
+                <hr>
+                 <p>La sonrisa de un niño enciende el alma y aprieta de amor el corazon.
+Que esa inocencia que llevan nos lleve a ser mas como ellos.
+Feliz dia a mi bebe hermoso que le da sentido a mi vida a cada instante y a todos esos pequeños alrededor del mundo que hacen mejor la vida de los que 
+Olvidamos que si fueramos un poco mas niños, nuestros dias serian mejores.
+</p> <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Familia Valdivia </h2>
+                    <hr class="light">
+                    <p class="text-faded">Para ti hijito, que estás aprendiendo a dar los primeros pasos en esta vida y se que todo nos ira bien  y siempre estaremos juntos y amandonos, te deseo toda la suerte, el éxito y el amor del mundo</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">dedicatoria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="services">
+        <div align= "center">
+<iframe width="962" height="541" src="https://www.youtube.com/embed/GIPF_gQcXf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Te amo hijito mio</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Eres mi amor</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>contigo hasta el fin del mundo</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Haremos historia juntos</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Te mereces todo el amor </h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM%20(2).jpeg?v=1559841048990" class="portfolio-box">
+                        <img src="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM%20(2).jpeg?v=1559841048990" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Felipe
+                                </div>
+                                <div class="project-name">
+                                    5 meses
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-05-30%20at%203.01.18%20PM.jpeg?v=1559841015294" class="portfolio-box">
+                        <img src="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-05-30%20at%203.01.18%20PM.jpeg?v=1559841015294" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   Felipe
+                                </div>
+                                <div class="project-name">
+                                   5 años
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM%20(1).jpeg?v=1559841044282" class="portfolio-box">
+                        <img src="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM%20(1).jpeg?v=1559841044282" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                 Felipe
+                                </div>
+                                <div class="project-name">
+                                    recien nacido
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM%20(3).jpeg?v=1559840977305" class="portfolio-box">
+                        <img src="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM%20(3).jpeg?v=1559840977305" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                     Felipe 
+                                </div>
+                                <div class="project-name">
+                                   antes de nacer
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-10%20at%2012.40.39%20PM.jpeg?v=1559840977255" class="portfolio-box">
+                        <img src="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-10%20at%2012.40.39%20PM.jpeg?v=1559840977255" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Clarissa
+                                </div>
+                                <div class="project-name">
+                                   4 años
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM.jpeg?v=1559840970460" class="portfolio-box">
+                        <img src="https://cdn.glitch.com/05faab3f-a325-40eb-9293-79ced073672b%2FWhatsApp%20Image%202019-04-08%20at%2010.09.14%20AM.jpeg?v=1559840970460" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                   Felipe
+                                </div>
+                                <div class="project-name">
+                                   4 años
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Entra y pide tu CRISSSCROSSS personalizado, junto con su AR y QR editable !</h2>
+                <a href="http://www.crissscrosss.com" class="btn btn-default btn-xl sr-button">CRISSSCROSSS AHORA!</a>
+            </div>
+        </div>
+    </aside>
+
+     <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">-CRISSSCROSSS-</h2>
+                    <hr class="primary">
+                    <p>Usando la tecnología a favor de una mejor humanidad, logrando entrelazarnos y conectarnos con todos nuestros recuerdos y vivencias</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>buscanos en facebook como "crissscrosss"</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="http://www.crissscrosss.com">http://www.CrisssCrosss.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/scroll-reveal.js"></script>
+    <script src="/magnific-popup.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="/client.js"></script>
+    <script src="/wow.min.js"></script>
+    
+    <!-- FontAwesome CDN -->
+    <script src="https://use.fontawesome.com/fcb170d64e.js"></script>
+
+</body>
+
+</html>
